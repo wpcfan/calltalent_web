@@ -1,0 +1,25 @@
+{
+  "name": "calltalent_web",
+  "version": "1.0.0",
+  "description": "The web front for CallTalent",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wpcfan/calltalent_web.git"
+  },
+  "keywords": [
+    "CallTalent",
+    "web",
+    "javascript",
+    "app"
+  ],
+  "author": "Peng Wang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wpcfan/calltalent_web/issues"
+  },
+  "homepage": "https://github.com/wpcfan/calltalent_web#readme"
+}
