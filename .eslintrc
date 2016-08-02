@@ -5,7 +5,7 @@
         "node": true,
         "mocha": true
     },
- "parserOptions": {
+    "parserOptions": {
         "ecmaVersion": 6,
         "sourceType": "module",
         "ecmaFeatures": {
@@ -13,7 +13,7 @@
             "jsx": true,
             "es6": true,
             "experimentalObjectRestSpread" : true
-        },
+        }
     },
     "rules": {
         "comma-dangle": 0,
@@ -33,7 +33,7 @@
     "plugins": [
         "react"
       ],
-     "globals": {
+    "globals": {
         "__DEVSERVER__": true,
         "__DEVCLIENT__": true
   }

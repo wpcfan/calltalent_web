@@ -8,7 +8,6 @@ module.exports = env => {
             path: resolve(__dirname, 'dist'),
             pathinfo: !env.prod,
         },
-        context: resolve(__dirname, 'src'),
         // Enable sourcemaps for debugging webpack's output.
         devtool: env.prod ? 'source-map' : 'eval',
         bail: env.prod,
@@ -36,7 +35,7 @@ module.exports = env => {
         // This is important because it allows us to avoid bundling all of our
         // dependencies, which allows browsers to cache those libraries between builds.
         externals: {
-            react: 'React',
+            'react': 'React',
             'react-dom': 'ReactDOM'
         },
     });
