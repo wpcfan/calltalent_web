@@ -4,7 +4,7 @@
   "description": "The web front for CallTalent",
   "main": "index.js",
   "scripts": {
-    "start:dev": "webpack-dev-server --env.dev"
+    "start:dev": "node ./src/server/index.js --env.dev"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,9 @@
   },
   "homepage": "https://github.com/wpcfan/calltalent_web#readme",
   "dependencies": {
+    "babel-polyfill": "^6.9.1",
+    "cross-env": "^2.0.0",
+    "express": "^4.14.0",
     "react": "^15.2.1",
     "react-dom": "^15.2.1",
     "react-helmet": "^3.1.0",
@@ -31,8 +34,7 @@
     "react-router-redux": "^4.0.5",
     "react-transform-hmr": "^1.0.4",
     "redux": "^3.5.2",
-    "redux-logger": "^2.6.1",
-    "typescript": "1.8.10"
+    "redux-logger": "^2.6.1"
   },
   "devDependencies": {
     "babel-cli": "^6.11.4",
@@ -49,20 +51,22 @@
     "babel-preset-react-hmre": "^1.1.1",
     "babel-preset-stage-0": "^6.5.0",
     "css-loader": "^0.23.1",
-    "file-loader": "^0.9.0",
-    "style-loader": "^0.13.1",
-    "url-loader": "^0.5.7",
-    "webpack": "^2.1.0-beta.20",
-    "webpack-validator": "^2.2.6",
-    "webpack-dev-server": "^2.1.0-beta.0",
-    "webpack-config-utils": "^2.0.0",
     "eslint": "^2.9.0",
     "eslint-config-airbnb": "^9.0.1",
     "eslint-plugin-import": "^1.12.0",
     "eslint-plugin-jsx-a11y": "^1.2.0",
     "eslint-plugin-react": "^5.2.2",
+    "file-loader": "^0.9.0",
+    "mkdirp": "^0.5.1",
     "nodemon": "^1.10.0",
     "source-map-loader": "^0.1.5",
-    "ts-loader": "^0.8.2"
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^2.1.0-beta.20",
+    "webpack-config-utils": "^2.0.0",
+    "webpack-dev-middleware": "^1.6.1",
+    "webpack-dev-server": "^2.1.0-beta.0",
+    "webpack-hot-middleware": "^2.12.2",
+    "webpack-validator": "^2.2.6"
   }
 }
